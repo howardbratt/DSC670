@@ -1,0 +1,7 @@
+{
+  "total_parameters": 494032768,
+  "trainable_parameters": 494032768,
+  "trainable_percent": 100.0,
+  "method": "full_supervised_fine_tuning",
+  "lora": false
+}

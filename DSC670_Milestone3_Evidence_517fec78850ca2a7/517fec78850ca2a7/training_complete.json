@@ -1,0 +1,27 @@
+{
+  "run_id": "517fec78850ca2a7",
+  "status": "succeeded",
+  "global_step": 72,
+  "best_checkpoint": "/content/dsc670_m3_huggingface/517fec78850ca2a7/checkpoints/checkpoint-48",
+  "best_validation_loss": 0.01239816378802061,
+  "elapsed_seconds_this_session": 777.7178648660001,
+  "optimizer_parameter_count": 494032768,
+  "sampled_parameter_tensors_changed": 290,
+  "sampled_parameter_tensors_total": 290,
+  "train_metrics": {
+    "train_runtime": 718.3591,
+    "train_samples_per_second": 0.802,
+    "train_steps_per_second": 0.1,
+    "total_flos": 298575068343552.0,
+    "train_loss": 0.13794305227040443,
+    "epoch": 3.0
+  },
+  "validation_metrics": {
+    "eval_loss": 0.01239816378802061,
+    "eval_runtime": 7.1409,
+    "eval_samples_per_second": 6.722,
+    "eval_steps_per_second": 6.722,
+    "epoch": 3.0
+  },
+  "finished_utc": "2026-10-30T22:42:52.976843+00:00"
+}

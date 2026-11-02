@@ -1,0 +1,31 @@
+source_field,datatype,description,example_value,expected_target,human_review_expected,expected_review,case_id,split
+patientDOB,date,Patient date of birth,1988-04-11,date_of_birth,NO,False,legacy_00,legacy
+member_birth_date,date,Member birth date,1975-09-30,date_of_birth,NO,False,legacy_01,legacy
+birth_dt,date,Date member was born,2001-01-05,date_of_birth,NO,False,legacy_02,legacy
+mem_num,string,Unique health plan member identifier,M00044321,member_id,NO,False,legacy_03,legacy
+subscriber_id,string,Identifier assigned to member/subscriber,S893440,member_id,NO,False,legacy_04,legacy
+fname,string,Member first or given name,Jordan,first_name,NO,False,legacy_05,legacy
+given_name,string,Patient given name,Alex,first_name,NO,False,legacy_06,legacy
+mname,string,Member middle name,Lee,middle_name,NO,False,legacy_07,legacy
+surname,string,Patient family name,Howard,last_name,NO,False,legacy_08,legacy
+lname,string,Member last name,Garcia,last_name,NO,False,legacy_09,legacy
+gender_cd,string,Administrative sex code,F,sex,NO,False,legacy_10,legacy
+sex_at_registration,string,Administrative sex captured at registration,M,sex,NO,False,legacy_11,legacy
+addr1,string,Primary street address,124 Main St,address_line_1,NO,False,legacy_12,legacy
+street_address,string,First address line,88 Oak Ave,address_line_1,NO,False,legacy_13,legacy
+addr2,string,"Apartment, suite, or secondary address information",Apt 4B,address_line_2,NO,False,legacy_14,legacy
+municipality,string,City of residence,Nashville,city,NO,False,legacy_15,legacy
+member_city,string,Member city,Murfreesboro,city,NO,False,legacy_16,legacy
+state_cd,string,Two-character state abbreviation,TN,state,NO,False,legacy_17,legacy
+zip5,string,Five-digit postal code,37130,postal_code,NO,False,legacy_18,legacy
+postal,string,Postal or ZIP code,37209,postal_code,NO,False,legacy_19,legacy
+home_phone,string,Primary home telephone number,6155550100,phone_number,NO,False,legacy_20,legacy
+mobile,string,Mobile contact number,6155550133,phone_number,NO,False,legacy_21,legacy
+email,string,Primary electronic mail address,member@example.org,email_address,NO,False,legacy_22,legacy
+email_addr,string,Member email address,sample@example.org,email_address,NO,False,legacy_23,legacy
+id,string,Unique identifier,12345,REVIEW,YES,True,legacy_24,legacy
+name,string,Full legal name in one field,Jordan Lee Howard,REVIEW,YES,True,legacy_25,legacy
+contact,string,Preferred contact value; type not supplied,6155550199,REVIEW,YES,True,legacy_26,legacy
+address,string,Complete mailing address in one field,"124 Main St, Nashville, TN 37209",REVIEW,YES,True,legacy_27,legacy
+code,string,Member demographic code,F,REVIEW,YES,True,legacy_28,legacy
+dob_or_age,string,Birth date or age depending on source system,45,REVIEW,YES,True,legacy_29,legacy

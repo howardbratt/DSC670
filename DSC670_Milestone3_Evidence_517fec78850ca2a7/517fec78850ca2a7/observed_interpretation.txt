@@ -1,0 +1,3 @@
+On the main test, review recall changed from 0.0% to 100.0%; adapted review precision was 64.3%. The adapted model missed 0 required reviews and unnecessarily escalated 5 clear cases. There were 7 end-to-end failures among its 48 test responses.
+
+Observed validation loss ranged from 0.0124 to 0.0404. I use validation loss to select the checkpoint, but only the separate generation tests indicate mapping usefulness. A small synthetic experiment cannot establish operational readiness.

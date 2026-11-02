@@ -1,0 +1,10 @@
+HTTP status: 403
+OpenAI response:
+{
+  "error": {
+    "message": "OpenAI is winding down the fine-tuning platform and your organization is no longer able to create new fine-tuning training jobs. Learn more https://developers.openai.com/api/docs/deprecations#update-to-openais-self-serve-fine-tuning",
+    "type": "invalid_request_error",
+    "param": null,
+    "code": "training_not_available"
+  }
+}

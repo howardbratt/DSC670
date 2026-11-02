@@ -1,0 +1,540 @@
+model,case_id,suite,source_field,expected_target,raw,generated_tokens,hit_token_limit,seconds,target_accuracy,end_to_end_accuracy,json_contract,schema_adherence,pred_review,expected_review
+base,case_289ee0dc2f9f,test,src_preferred_endpoint,REVIEW,"{
+  ""target_field"": ""src_preferred_endpoint"",
+  ""human_review"": false,
+  ""reason"": ""The 'src_preferred_endpoint' field does not have a defined type and could represent any contact endpoint without additional context.""
+}",50,False,4.048342155,False,False,False,False,False,True
+base,case_ee82205e44cc,test,PERSON_E_MAIL,email_address,"```json
+{
+  ""source_field"": ""PERSON_EMAIL"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'PERSON_EMAIL' field represents the email address associated with a specific individual, which is not typically used to represent a postal address.""
+}
+```",62,False,1.935705778000056,False,False,False,False,False,False
+base,case_5586bdfb0e5e,test,src_claim_reference,REVIEW,"{
+  ""target_field"": ""review"",
+  ""human_review"": false,
+  ""reason"": ""The 'src_claim_reference' field does not contain any information related to the review process or status.""
+}",43,False,1.3750281999999743,False,False,False,False,False,True
+base,case_dc13087e3350,test,src_person_zipcode,postal_code,"```json
+{
+  ""source_field"": ""src_person_zipcode"",
+  ""human_review"": false,
+  ""reason"": ""The 'src_person_zipcode' field is a ZIP or postal code in the mailing address, which is not typically used to represent gender identity.""
+}
+```",59,False,1.8227308360001189,False,False,False,False,False,False
+base,case_6f288b1f2837,test,src_person_call_number,phone_number,"```json
+{
+  ""source_field"": ""gender"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'gender' field is not provided in the given JSON structure.""
+}
+```",48,False,1.5196259720000853,False,False,False,False,False,False
+base,case_4a293403bdd1,test,PERSON_BIRTH_DT,date_of_birth,"```json
+{
+  ""target_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field does not provide gender information.""
+}
+```",40,False,1.2607855010001003,False,False,False,False,False,False
+base,case_45c2e5c22313,test,src_person_e_mail,email_address,"```json
+{
+  ""source_field"": ""email_address"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'email_address' field is a standard attribute that represents the primary method of communication between individuals.""
+}
+```",55,False,1.7590416350001306,False,False,False,False,False,False
+base,case_7e7013414fdc,test,PERSON_FIRST,first_name,"```json
+{
+  ""source_field"": ""first_name"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field is the primary personal name provided by the user, which does not require review.""
+}
+```",57,False,1.7376817200001824,False,False,False,False,False,False
+base,case_6de0229b6b97,test,person_call_number,phone_number,"```json
+{
+  ""target_field"": ""address_line_2"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field does not exist in this dataset.""
+}
+```",45,False,1.3976493400000436,False,False,False,False,False,False
+base,case_5eba009e9c57,test,CLAIM_REFERENCE,REVIEW,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The 'CLAIM_REFERENCE' field does not correspond to a valid healthcare demographic record.""
+}
+```",35,False,1.1226628879999225,False,False,False,False,False,True
+base,case_9428122c2771,test,PERSON_NAME_TITLE,REVIEW,"```json
+{
+  ""source_field"": ""first_name"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field should be transformed to lowercase.""
+}
+```",47,False,1.4645361760001379,False,False,False,False,False,True
+base,case_5ad295f2b2f6,test,person_state_abbrev,state,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The 'person_state_abbrev' field represents the state abbreviation of the person's residence, which is not typically used to review demographics.""
+}
+```",46,False,1.4783106460001818,False,False,False,False,False,False
+base,case_5277c86ef26a,test,src_person_name_title,REVIEW,"```json
+{
+  ""source_field"": ""first_name"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The source field 'first_name' contains the full name without any necessary transformations.""
+}
+```",51,False,1.605830474999948,False,False,False,False,False,True
+base,case_76a20b98b79e,test,DEMOGRAPHIC_SEX,sex,"```json
+{
+  ""source_field"": ""gender"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'gender' field is not an administrative sex but rather the gender reported by the individual.""
+}
+```",53,False,1.6398593640001309,False,False,False,False,False,False
+base,case_3be2c3f18c20,test,src_person_birth_dt,date_of_birth,"```json
+{
+  ""source_field"": ""first_name"",
+  ""datatype"": ""string"",
+  ""name"": ""First Name"",
+  ""value"": ""John""
+}
+```",38,False,1.2037983689999692,False,False,False,False,False,False
+base,case_5e6b7babec38,test,PERSON_ADDR_EXTRA,address_line_2,"```json
+{
+  ""source_field"": ""address_line_2"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field is provided in the demographic interface but does not appear to be used for any specific purpose other than being listed alongside the primary address.""
+}
+```",71,False,2.2062360930001432,False,False,False,False,False,False
+base,case_ec3e03c2d4a9,test,src_person_addr_primary,address_line_1,"```json
+{
+  ""source_field"": ""address_line_1"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_1' field is the primary street address component only, which is not typically used in demographic analysis.""
+}
+```",62,False,1.9563251090000904,False,False,False,False,False,False
+base,case_26a4196776f4,test,src_person_last,last_name,"```json
+{
+  ""source_field"": ""src_person_first"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'src_person_first' field does not contain the full name of the person but rather their first name.""
+}
+```",58,False,1.82438523299993,False,False,False,False,False,False
+base,case_5689cca005a3,test,person_last,last_name,"```json
+{
+  ""target_field"": ""last_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'last_name' field should contain the full name of the individual, including their given and middle names.""
+}
+```",50,False,1.5822717890000604,False,False,False,False,False,False
+base,case_dd272c4b271e,test,PERSON_ZIPCODE,postal_code,"```json
+{
+  ""source_field"": ""address_line_2"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field is not a valid demographic field.""
+}
+```",52,False,1.6158015309999882,False,False,False,False,False,False
+base,case_b956eb0996df,test,src_person_midname,middle_name,"```json
+{
+  ""source_field"": ""middle_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'src_person_midname' field contains the middle name of the individual, which is not typically used in demographic records.""
+}
+```",53,False,1.660740960000112,False,False,False,False,False,False
+base,case_35a7aa4d4072,test,demographic_sex,sex,"```json
+{
+  ""target_field"": ""sex"",
+  ""human_review"": false,
+  ""reason"": ""The 'demographic_sex' field does not contain the actual administrative sex of the individual.""
+}
+```",45,False,1.4173100170000907,False,False,False,False,False,False
+base,case_6045b0a9fd62,test,PERSON_CALL_NUMBER,phone_number,"```json
+{
+  ""source_field"": ""PERSON_CALL_NUMBER"",
+  ""human_review"": false,
+  ""reason"": ""The 'PERSON_CALL_NUMBER' field does not provide any specific information about the demographics of the individual.""
+}
+```",49,False,1.5326045780000186,False,False,False,False,False,False
+base,case_bacc0989bdbb,test,insured_locality,city,"{
+  ""target_field"": ""insured_locality"",
+  ""human_review"": false,
+  ""reason"": ""Insured locality is not an administrative field but rather a location where the insured person lives.""
+}",44,False,1.3969279190000634,False,False,False,False,False,False
+base,case_1c0ee82f2655,test,person_midname,middle_name,"```json
+{
+  ""source_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field is already separated into two components.""
+}
+```",41,False,1.2810589640000671,False,False,False,False,False,False
+base,case_6617306b3c8a,test,PERSON_ADDR_PRIMARY,address_line_1,"```json
+{
+  ""source_field"": ""address_line_1"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_1' field is the primary street address component only, which is not typically used in demographic interfaces.""
+}
+```",62,False,2.0064529940000284,False,False,False,False,False,False
+base,case_90fa880b4d11,test,preferred_endpoint,REVIEW,"{
+  ""target_field"": ""preferred_endpoint"",
+  ""human_review"": false,
+  ""reason"": ""The preferred endpoint field does not have a defined type or semantic meaning.""
+}",38,False,1.2043416390001767,False,False,False,False,False,True
+base,case_4711933a8ad9,test,PREFERRED_ENDPOINT,REVIEW,"{
+  ""target_field"": ""address_line_1"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_1' field does not have a defined type or format.""
+}",43,False,1.3562436510001135,False,False,True,True,False,True
+base,case_33340f43fd6b,test,INSURED_LOCALITY,city,"```json
+{
+  ""target_field"": ""insured_locality"",
+  ""human_review"": false,
+  ""reason"": ""Insured locality is not an administrative unit but rather a location where the insured person lives.""
+}
+```",48,False,1.4878596369999286,False,False,False,False,False,False
+base,case_81fc48b9bdc2,test,src_insured_locality,city,"{
+  ""target_field"": ""address_line_1"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_1' field does not correspond to a specific location within the provided dataset.""
+}",46,False,1.43130822299986,False,False,True,True,False,False
+base,case_c5afee3568dc,test,PERSON_LAST,last_name,"```json
+{
+  ""source_field"": ""PERSON_LAST"",
+  ""human_review"": false,
+  ""reason"": ""The 'PERSON_LAST' field does not contain the full name of the individual but rather just their last name.""
+}
+```",50,False,1.5856513430001087,False,False,False,False,False,False
+base,case_51360158cb5a,test,src_demographic_sex,sex,"```json
+{
+  ""source_field"": ""src_demographic_sex"",
+  ""human_review"": false,
+  ""reason"": ""The 'src_demographic_sex' field does not contain the expected administrative sex information.""
+}
+```",47,False,1.4636213169999337,False,False,False,False,False,False
+base,case_bf27d1f3a022,test,covered_person_ref,member_id,"```json
+{
+  ""target_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field does not appear to be an expected or commonly used field in the provided JSON structure.""
+}
+```",51,False,1.5850800690000142,False,False,False,False,False,False
+base,case_391a824f5cb5,test,person_birth_dt,date_of_birth,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The 'person_birth_dt' field represents the birth date of the individual, which is not an age.""
+}
+```",40,False,1.2870067960000142,False,False,False,False,False,False
+base,case_0286a7f4eb0c,test,person_name_title,REVIEW,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The source field 'person_name_title' contains a combined title that needs to be transformed into the full name format.""
+}
+```",42,False,1.3346837290000622,False,False,False,False,False,True
+base,case_1ef44d6707aa,test,person_zipcode,postal_code,"```json
+{
+  ""target_field"": ""address_line_2"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field does not exist in this dataset.""
+}
+```",45,False,1.4074229790001027,False,False,False,False,False,False
+base,case_58b740b4225d,test,COVERED_PERSON_REF,member_id,"```json
+{
+  ""target_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field does not appear to be part of the provided source metadata.""
+}
+```",46,False,1.4319924339999943,False,False,False,False,False,False
+base,case_e365b9c558fe,test,src_person_state_abbrev,state,"```json
+{
+  ""source_field"": ""src_person_state_abbrev"",
+  ""human_review"": false,
+  ""reason"": ""The source field 'src_person_state_abbrev' does not provide gender information.""
+}
+```",47,False,1.4705284879998999,False,False,False,False,False,False
+base,case_6529ead621ac,test,src_person_addr_extra,address_line_2,"```json
+{
+  ""source_field"": ""address_line_3"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_3' field appears to be a secondary address information that was provided in the enrollment extract.""
+}
+```",60,False,1.8595042059998832,False,False,False,False,False,False
+base,case_32bea7bbc1eb,test,claim_reference,REVIEW,"{
+  ""target_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field does not correspond to a valid member ID.""
+}",39,False,1.20911517799982,False,False,True,True,False,True
+base,case_3a7775e19390,test,person_addr_extra,address_line_2,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The 'person_addr_extra' field does not contain any specific information about the review of the member.""
+}
+```",39,False,1.2263721400001941,False,False,False,False,False,False
+base,case_244137f46a30,test,PERSON_STATE_ABBREV,state,"```json
+{
+  ""source_field"": ""STATE"",
+  ""human_review"": false,
+  ""reason"": ""The 'STATE' field is an abbreviation of the state code, which is not typically used directly in demographic interfaces.""
+}
+```",50,False,1.5834807239998554,False,False,False,False,False,False
+base,case_d4939ec575b5,test,PERSON_MIDNAME,middle_name,"```json
+{
+  ""source_field"": ""middle_name"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'middle_name' field is used to separate the first and middle names in the demographic record.""
+}
+```",55,False,1.7588143030000083,False,False,False,False,False,False
+base,case_41cbe82fadb3,test,src_covered_person_ref,member_id,"```json
+{
+  ""target_field"": ""address_line_2"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field does not appear to be part of the provided source metadata.""
+}
+```",50,False,1.5595534450001196,False,False,False,False,False,False
+base,challenge_0,challenge,all_names,REVIEW,"```json
+{
+  ""source_field"": ""first_name"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field is missing the 'middle_name' and 'last_name' information.""
+}
+```",55,False,1.7090960190000715,False,False,False,False,False,True
+base,challenge_1,challenge,all_address,REVIEW,"```json
+{
+  ""source_field"": ""address_line_2"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field does not exist in the provided JSON schema.""
+}
+```",54,False,1.6774395560000812,False,False,False,False,False,True
+base,challenge_2,challenge,facility_number,REVIEW,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The 'facility_number' field does not provide any meaningful information about the subject of the analysis.""
+}
+```",38,False,1.1748207549999279,False,False,False,False,False,True
+base,challenge_3,challenge,other_date,REVIEW,"{
+  ""human_review"": false,
+  ""reason"": ""The 'other_date' field represents the date of service, which is not related to the date of birth. It should ideally correspond to the 'date_of_birth' field.""
+}",50,False,1.5439802870000676,False,False,False,False,False,True
+base,challenge_4,challenge,metadata_attack,REVIEW,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The source field 'metadata_attack' does not contain any meaningful information to determine the target field. It appears to be an unknown field that should be ignored.""
+}
+```",50,False,1.599620158000107,False,False,False,False,False,True
+base,challenge_5,challenge,sex_or_identity,REVIEW,"```json
+{
+  ""source_field"": ""sex_or_identity"",
+  ""human_review"": false,
+  ""reason"": ""The 'sex_or_identity' field does not provide a clear distinction between gender and identity; it could refer to either.""
+}
+```",53,False,1.6656462040000406,False,False,False,False,False,True
+base,challenge_6,challenge,clear_member,member_id,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The 'clear_member' field does not contain any specific information about gender identification.""
+}
+```",35,False,1.0835084070001813,False,False,False,False,False,False
+base,challenge_7,challenge,clear_telephone,phone_number,"{
+  ""target_field"": ""address_line_2"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field does not exist in this dataset.""
+}",41,False,1.2818953260000399,False,False,True,True,False,False
+base,legacy_00,legacy,patientDOB,date_of_birth,"```json
+{
+  ""target_field"": ""date_of_birth"",
+  ""human_review"": false,
+  ""reason"": ""The 'date_of_birth' field is a date type, which does not require review.""
+}
+```",47,False,1.493635630999961,False,False,False,False,False,False
+base,legacy_01,legacy,member_birth_date,date_of_birth,"```json
+{
+  ""target_field"": ""date_of_birth"",
+  ""human_review"": false,
+  ""reason"": ""The 'date_of_birth' field does not provide gender information.""
+}
+```",42,False,1.3039175189999241,False,False,False,False,False,False
+base,legacy_02,legacy,birth_dt,date_of_birth,"```json
+{
+  ""target_field"": ""date_of_birth"",
+  ""human_review"": false,
+  ""reason"": ""The 'date_of_birth' field does not provide the birth date of the member.""
+}
+```",46,False,1.4452687229997991,False,False,False,False,False,False
+base,legacy_03,legacy,mem_num,member_id,"```json
+{
+  ""target_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field does not exist in the provided dataset.""
+}
+```",42,False,1.360344791999978,False,False,False,False,False,False
+base,legacy_04,legacy,subscriber_id,member_id,"```json
+{
+  ""target_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field does not appear to be an administrative gender identifier.""
+}
+```",44,False,1.4195942129999821,False,False,False,False,False,False
+base,legacy_06,legacy,given_name,first_name,"```json
+{
+  ""source_field"": ""middle_name"",
+  ""datatype"": ""string"",
+  ""description"": ""Patient's middle name"",
+  ""example_value"": ""John""
+}
+```",41,False,1.2899899720000576,False,False,False,False,False,False
+base,legacy_07,legacy,mname,middle_name,"```json
+{
+  ""source_field"": ""first_name"",
+  ""datatype"": ""string"",
+  ""description"": ""First name of the individual"",
+  ""example_value"": ""John""
+}
+```",42,False,1.3367606829999659,False,False,False,False,False,False
+base,legacy_08,legacy,surname,last_name,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The 'surname' field does not provide gender information.""
+}
+```",30,False,0.9500087730000359,False,False,False,False,False,False
+base,legacy_09,legacy,lname,last_name,"```json
+{
+  ""target_field"": ""middle_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'middle_name' field does not exist in the provided schema.""
+}
+```",42,False,1.3211755450001874,False,False,False,False,False,False
+base,legacy_10,legacy,gender_cd,sex,"```json
+{
+  ""target_field"": ""sex"",
+  ""human_review"": false,
+  ""reason"": ""The 'gender_cd' field represents the administrative sex code, which is a standardized way of classifying gender in many countries. However, it does not directly correspond to the review field 'review'. The 'review' field could refer to various aspects such as health status, treatment preferences, or other demographics that are not explicitly related to the gender classification.""
+}
+```",97,False,3.0310297370001535,False,False,False,False,False,False
+base,legacy_11,legacy,sex_at_registration,sex,"```json
+{
+  ""target_field"": ""sex"",
+  ""human_review"": false,
+  ""reason"": ""The 'sex' field captures the administrative gender assigned at registration.""
+}
+```",40,False,1.2475833799999236,False,False,False,False,False,False
+base,legacy_14,legacy,addr2,address_line_2,"```json
+{
+  ""source_field"": ""address_line_2"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field represents the second-level address in an apartment or suite, which is not typically used to review gender identification.""
+}
+```",66,False,2.0237411980001525,False,False,False,False,False,False
+base,legacy_15,legacy,municipality,city,"{
+  ""target_field"": ""municipality"",
+  ""human_review"": false,
+  ""reason"": ""The 'municipality' field does not provide information about the specific location where the individual resides.""
+}",45,False,1.4263984540000365,False,False,False,False,False,False
+base,legacy_16,legacy,member_city,city,"{
+  ""target_field"": ""review"",
+  ""human_review"": false,
+  ""reason"": ""The 'member_city' field does not provide enough information to determine the review type.""
+}",40,False,1.268783767000059,False,False,False,False,False,False
+base,legacy_17,legacy,state_cd,state,"{
+  ""target_field"": ""address_line_2"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field does not have a defined purpose in the given context.""
+}",45,False,1.405363178000016,False,False,True,True,False,False
+base,legacy_18,legacy,zip5,postal_code,"```json
+{
+  ""source_field"": ""address_line_2"",
+  ""datatype"": ""string"",
+  ""reason"": ""The 'address_line_2' field represents the second street or road in the postal code.""
+}
+```",49,False,1.5264512759999889,False,False,False,False,False,False
+base,legacy_19,legacy,postal,postal_code,"```json
+{
+  ""target_field"": ""address_line_2"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field does not exist in the provided dataset.""
+}
+```",46,False,1.4567876440000873,False,False,False,False,False,False
+base,legacy_20,legacy,home_phone,phone_number,"{
+  ""target_field"": ""home_phone"",
+  ""human_review"": false,
+  ""reason"": ""The 'home_phone' field does not provide the primary home telephone number.""
+}",39,False,1.2236352040001748,False,False,False,False,False,False
+base,legacy_21,legacy,mobile,phone_number,"{
+  ""target_field"": ""email_address"",
+  ""human_review"": false,
+  ""reason"": ""The 'email_address' field does not have a specific example value provided in the given context.""
+}",43,False,1.3814036150001812,False,False,True,True,False,False
+base,legacy_22,legacy,email,email_address,"{
+  ""target_field"": ""email"",
+  ""human_review"": false,
+  ""reason"": ""The 'email' field does not provide any specific information about the gender of the individual.""
+}",41,False,1.2807285880001018,False,False,False,False,False,False
+base,legacy_23,legacy,email_addr,email_address,"{
+  ""target_field"": ""email_addr"",
+  ""human_review"": false,
+  ""reason"": ""The 'email_addr' field does not contain any specific information about the gender of the members.""
+}",43,False,1.341655363999962,False,False,False,False,False,False
+base,legacy_24,legacy,id,REVIEW,"```json
+{
+  ""target_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field does not appear to be an administrative gender identifier.""
+}
+```",44,False,1.4511320460001116,False,False,False,False,False,True
+base,legacy_25,legacy,name,REVIEW,"```json
+{
+  ""target_field"": ""first_name"",
+  ""human_review"": false,
+  ""reason"": ""The 'first_name' field is missing the gender information.""
+}
+```",40,False,1.29056582599992,False,False,False,False,False,True
+base,legacy_26,legacy,contact,REVIEW,"```json
+{
+  ""source_field"": ""address_line_2"",
+  ""datatype"": ""string"",
+  ""human_review"": false,
+  ""reason"": ""The 'address_line_2' field does not provide a preferred contact value.""
+}
+```",53,False,1.6745871759999318,False,False,False,False,False,True
+base,legacy_27,legacy,address,REVIEW,"{
+  ""target_field"": ""address"",
+  ""human_review"": false,
+  ""reason"": ""The 'address' field does not provide the complete mailing address information.""
+}",37,False,1.1733660060001512,False,False,False,False,False,True
+base,legacy_28,legacy,code,REVIEW,"```json
+{
+  ""source_field"": ""member_id"",
+  ""human_review"": false,
+  ""reason"": ""The source field 'member_id' does not provide gender information.""
+}
+```",41,False,1.2896099429999595,False,False,False,False,False,True
+base,legacy_29,legacy,dob_or_age,REVIEW,"```json
+{
+  ""human_review"": false,
+  ""reason"": ""The 'dob_or_age' field does not provide gender information.""
+}
+```",32,False,1.0174271640000825,False,False,False,False,False,True
+fine_tuned,case_4a293403bdd1,test,PERSON_BIRTH_DT,date_of_birth,"{""target_field"": ""REVIEW"", ""human_review"": true, ""reason"": ""The metadata is ambiguous, unsupported, contradictory, or needs transformation; analyst review is required.""}",38,False,1.227756705000047,False,False,True,True,True,False
+fine_tuned,case_5e6b7babec38,test,PERSON_ADDR_EXTRA,address_line_2,"{""target_field"": ""middle_name"", ""human_review"": false, ""reason"": ""The description identifies middle name.""}",26,False,0.8490465600002608,False,False,True,True,False,False
+fine_tuned,case_f42a945178bf,test,person_e_mail,email_address,"{""target_field"": ""REVIEW"", ""human_review"": true, ""reason"": ""The metadata is ambiguous, unsupported, contradictory, or needs transformation; analyst review is required.""}",38,False,1.218582747000255,False,False,True,True,True,False
+fine_tuned,case_b3ffa97d7f2f,test,person_first,first_name,"{""target_field"": ""REVIEW"", ""human_review"": true, ""reason"": ""The metadata is ambiguous, unsupported, contradictory, or needs transformation; analyst review is required.""}",38,False,1.2308087210003578,False,False,True,True,True,False
+fine_tuned,case_391a824f5cb5,test,person_birth_dt,date_of_birth,"{""target_field"": ""REVIEW"", ""human_review"": true, ""reason"": ""The metadata is ambiguous, unsupported, contradictory, or needs transformation; analyst review is required.""}",38,False,1.2278406249997715,False,False,True,True,True,False
+fine_tuned,case_dd033864ad41,test,person_addr_primary,address_line_1,"{""target_field"": ""REVIEW"", ""human_review"": true, ""reason"": ""The metadata is ambiguous, unsupported, contradictory, or needs transformation; analyst review is required.""}",38,False,1.22621651999998,False,False,True,True,True,False
+fine_tuned,case_3a7775e19390,test,person_addr_extra,address_line_2,"{""target_field"": ""middle_name"", ""human_review"": false, ""reason"": ""The description identifies middle name.""}",26,False,0.9114514660000168,False,False,True,True,False,False
+fine_tuned,challenge_0,challenge,all_names,REVIEW,"{""target_field"": ""middle_name"", ""human_review"": false, ""reason"": ""The description identifies middle name.""}",26,False,0.8475772359997791,False,False,True,True,False,True
+fine_tuned,legacy_02,legacy,birth_dt,date_of_birth,"{""target_field"": ""REVIEW"", ""human_review"": true, ""reason"": ""The metadata is ambiguous, unsupported, contradictory, or needs transformation; analyst review is required.""}",38,False,1.2008701650001967,False,False,True,True,True,False
+fine_tuned,legacy_24,legacy,id,REVIEW,"{""target_field"": ""member_id"", ""human_review"": false, ""reason"": ""The description identifies member id.""}",26,False,0.866473223000412,False,False,True,True,False,True

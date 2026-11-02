@@ -1,0 +1,6 @@
+{
+  "validation_supervised_tokens": 1416,
+  "validation_mean_token_accuracy": 0.9978813559322034,
+  "validation_token_weighted_loss": 0.016067553477849206,
+  "validation_perplexity": 1.0161973307513261
+}
