@@ -1,0 +1,8 @@
+{
+  "mode": "live",
+  "run_id": "d0434de9683c4f05a64e80f537041531",
+  "status": "FINISHED",
+  "verified_requests": 3,
+  "mean_latency_seconds": 1.4185412999552984,
+  "latency_scope": "live provider call"
+}

@@ -1,0 +1,33 @@
+{
+  "mode": "live",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "In one sentence, explain response latency in a generative AI application."
+    },
+    {
+      "role": "assistant",
+      "content": "Response latency in a generative AI application refers to the time delay between a user's input and the system's generated output."
+    },
+    {
+      "role": "user",
+      "content": "How might the conversation history affect token use?"
+    },
+    {
+      "role": "assistant",
+      "content": "Conversation history can significantly affect token use in a generative AI application, as longer histories require more tokens to encode the context, potentially leading to higher usage limits and increased processing time, while also influencing the relevance and coherence of the generated responses."
+    },
+    {
+      "role": "user",
+      "content": "Name two operational signals to monitor alongside answer quality."
+    },
+    {
+      "role": "assistant",
+      "content": "Two operational signals to monitor alongside answer quality are response latency and user engagement metrics (such as session duration or interaction frequency)."
+    }
+  ]
+}

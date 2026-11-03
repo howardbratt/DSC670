@@ -1,0 +1,33 @@
+{
+  "mode": "demo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "In one sentence, explain response latency in a generative AI application."
+    },
+    {
+      "role": "assistant",
+      "content": "Latency measures how long a request takes to return a response."
+    },
+    {
+      "role": "user",
+      "content": "How might the conversation history affect token use?"
+    },
+    {
+      "role": "assistant",
+      "content": "Longer conversation history can increase input tokens and processing time."
+    },
+    {
+      "role": "user",
+      "content": "Name two operational signals to monitor alongside answer quality."
+    },
+    {
+      "role": "assistant",
+      "content": "Monitor failures and latency alongside output quality and resource use."
+    }
+  ]
+}

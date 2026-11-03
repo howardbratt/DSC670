@@ -1,0 +1,34 @@
+# HELP week9_requests_total Application requests attempted
+# TYPE week9_requests_total counter
+week9_requests_total 3.0
+# HELP week9_requests_created Application requests attempted
+# TYPE week9_requests_created gauge
+week9_requests_created 1.793677867481984e+09
+# HELP week9_errors_total Application requests failed
+# TYPE week9_errors_total counter
+week9_errors_total 0.0
+# HELP week9_errors_created Application requests failed
+# TYPE week9_errors_created gauge
+week9_errors_created 1.793677867481984e+09
+# HELP week9_request_seconds Elapsed model-call seconds
+# TYPE week9_request_seconds histogram
+week9_request_seconds_bucket{le="0.005"} 0.0
+week9_request_seconds_bucket{le="0.01"} 0.0
+week9_request_seconds_bucket{le="0.025"} 0.0
+week9_request_seconds_bucket{le="0.05"} 0.0
+week9_request_seconds_bucket{le="0.075"} 0.0
+week9_request_seconds_bucket{le="0.1"} 0.0
+week9_request_seconds_bucket{le="0.25"} 0.0
+week9_request_seconds_bucket{le="0.5"} 0.0
+week9_request_seconds_bucket{le="0.75"} 0.0
+week9_request_seconds_bucket{le="1.0"} 1.0
+week9_request_seconds_bucket{le="2.5"} 3.0
+week9_request_seconds_bucket{le="5.0"} 3.0
+week9_request_seconds_bucket{le="7.5"} 3.0
+week9_request_seconds_bucket{le="10.0"} 3.0
+week9_request_seconds_bucket{le="+Inf"} 3.0
+week9_request_seconds_count 3.0
+week9_request_seconds_sum 4.2556238998658955
+# HELP week9_request_seconds_created Elapsed model-call seconds
+# TYPE week9_request_seconds_created gauge
+week9_request_seconds_created 1.793677867481984e+09

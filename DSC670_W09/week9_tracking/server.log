@@ -1,0 +1,68 @@
+Registry store URI not provided. Using backend store URI.
+2026/11/02 20:29:30 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/11/02 20:29:30 INFO mlflow.store.db.utils: Updating database tables
+[MLflow] Security middleware enabled with default settings (localhost-only). To allow connections from other hosts, use --host 0.0.0.0 and configure --allowed-hosts and --cors-allowed-origins.
+2026/11/02 20:29:32 WARNING mlflow.server: MLflow job execution requirements not met (MLflow job backend does not support Windows system.). Server will start without job execution support. Errors will be surfaced at job invocation time.
+C:\Users\socia\dsc530\envs\dsc670\Lib\site-packages\mlflow\server\fastapi_app.py:23: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+2026/11/02 20:29:37 INFO:     Started server process [18392]
+2026/11/02 20:29:37 INFO:     Waiting for application startup.
+2026/11/02 20:29:37 INFO:     Application startup complete.
+2026/11/02 20:29:37 INFO:     Uvicorn running on http://127.0.0.1:61879 (Press CTRL+C to quit)
+2026/11/02 20:29:37 INFO:     127.0.0.1:61890 - "GET /health HTTP/1.1" 200 OK
+2026/11/02 20:29:37 INFO:     127.0.0.1:61891 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=DSC670_Week9_Observability HTTP/1.1" 404 Not Found
+2026/11/02 20:29:37 INFO:     127.0.0.1:61891 - "POST /api/2.0/mlflow/experiments/create HTTP/1.1" 200 OK
+2026/11/02 20:29:37 INFO:     127.0.0.1:61891 - "GET /api/2.0/mlflow/experiments/get?experiment_id=1 HTTP/1.1" 200 OK
+2026/11/02 20:29:39 INFO:     127.0.0.1:61895 - "GET /api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+Registry store URI not provided. Using backend store URI.
+[MLflow] Security middleware enabled with default settings (localhost-only). To allow connections from other hosts, use --host 0.0.0.0 and configure --allowed-hosts and --cors-allowed-origins.
+2026/11/02 20:47:34 WARNING mlflow.server: MLflow job execution requirements not met (MLflow job backend does not support Windows system.). Server will start without job execution support. Errors will be surfaced at job invocation time.
+C:\Users\socia\dsc530\envs\dsc670\Lib\site-packages\mlflow\server\fastapi_app.py:23: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+2026/11/02 20:47:38 INFO:     Started server process [52364]
+2026/11/02 20:47:38 INFO:     Waiting for application startup.
+2026/11/02 20:47:38 INFO:     Application startup complete.
+2026/11/02 20:47:38 INFO:     Uvicorn running on http://127.0.0.1:63470 (Press CTRL+C to quit)
+2026/11/02 20:47:38 INFO:     127.0.0.1:63478 - "GET /health HTTP/1.1" 200 OK
+2026/11/02 20:47:38 INFO:     127.0.0.1:63481 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=DSC670_Week9_Observability HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "POST /api/2.0/mlflow/runs/create HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "GET /api/2.0/mlflow/runs/get?run_uuid=049b3408c14849b1a0c5fbb0730fd035&run_id=049b3408c14849b1a0c5fbb0730fd035 HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "GET /api/2.0/mlflow/runs/get?run_uuid=049b3408c14849b1a0c5fbb0730fd035&run_id=049b3408c14849b1a0c5fbb0730fd035 HTTP/1.1" 200 OK
+2026/11/02 21:14:21 INFO:     127.0.0.1:56538 - "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 OK
+2026/11/02 21:14:22 INFO:     127.0.0.1:56540 - "GET /api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/11/02 21:14:36 INFO:     127.0.0.1:52926 - "GET /api/2.0/mlflow/runs/get?run_uuid=049b3408c14849b1a0c5fbb0730fd035&run_id=049b3408c14849b1a0c5fbb0730fd035 HTTP/1.1" 200 OK
+2026/11/02 21:14:36 INFO:     127.0.0.1:52926 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=049b3408c14849b1a0c5fbb0730fd035&metric_key=request_count&run_id=049b3408c14849b1a0c5fbb0730fd035&max_results=25000 HTTP/1.1" 200 OK
+2026/11/02 21:14:36 INFO:     127.0.0.1:52926 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=049b3408c14849b1a0c5fbb0730fd035&metric_key=request_latency&run_id=049b3408c14849b1a0c5fbb0730fd035&max_results=25000 HTTP/1.1" 200 OK
+2026/11/02 21:14:36 INFO:     127.0.0.1:52926 - "GET /api/2.0/mlflow/runs/get?run_uuid=049b3408c14849b1a0c5fbb0730fd035&run_id=049b3408c14849b1a0c5fbb0730fd035 HTTP/1.1" 200 OK
+Registry store URI not provided. Using backend store URI.
+[MLflow] Security middleware enabled with default settings (localhost-only). To allow connections from other hosts, use --host 0.0.0.0 and configure --allowed-hosts and --cors-allowed-origins.
+2026/11/02 21:50:16 WARNING mlflow.server: MLflow job execution requirements not met (MLflow job backend does not support Windows system.). Server will start without job execution support. Errors will be surfaced at job invocation time.
+C:\Users\socia\dsc530\envs\dsc670\Lib\site-packages\mlflow\server\fastapi_app.py:23: StarletteDeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+  from starlette.middleware.wsgi import WSGIResponder, build_environ
+2026/11/02 21:50:20 INFO:     Started server process [27384]
+2026/11/02 21:50:20 INFO:     Waiting for application startup.
+2026/11/02 21:50:20 INFO:     Application startup complete.
+2026/11/02 21:50:20 INFO:     Uvicorn running on http://127.0.0.1:52446 (Press CTRL+C to quit)
+2026/11/02 21:50:20 INFO:     127.0.0.1:52465 - "GET /health HTTP/1.1" 200 OK
+2026/11/02 21:50:20 INFO:     127.0.0.1:56231 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=DSC670_Week9_Observability HTTP/1.1" 200 OK
+2026/11/02 21:51:36 INFO:     127.0.0.1:62903 - "POST /api/2.0/mlflow/runs/create HTTP/1.1" 200 OK
+2026/11/02 21:51:36 INFO:     127.0.0.1:62903 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:51:36 INFO:     127.0.0.1:62903 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:51:36 INFO:     127.0.0.1:62903 - "GET /api/2.0/mlflow/runs/get?run_uuid=d0434de9683c4f05a64e80f537041531&run_id=d0434de9683c4f05a64e80f537041531 HTTP/1.1" 200 OK
+2026/11/02 21:51:38 INFO:     127.0.0.1:62906 - "GET /api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/11/02 21:51:38 INFO:     127.0.0.1:62903 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:51:40 INFO:     127.0.0.1:62903 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:51:41 INFO:     127.0.0.1:62903 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:51:41 INFO:     127.0.0.1:62903 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/02 21:51:41 INFO:     127.0.0.1:62903 - "GET /api/2.0/mlflow/runs/get?run_uuid=d0434de9683c4f05a64e80f537041531&run_id=d0434de9683c4f05a64e80f537041531 HTTP/1.1" 200 OK
+2026/11/02 21:51:41 INFO:     127.0.0.1:62903 - "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 OK
+2026/11/02 21:51:55 INFO:     127.0.0.1:54792 - "GET /api/2.0/mlflow/runs/get?run_uuid=d0434de9683c4f05a64e80f537041531&run_id=d0434de9683c4f05a64e80f537041531 HTTP/1.1" 200 OK
+2026/11/02 21:51:55 INFO:     127.0.0.1:54792 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=d0434de9683c4f05a64e80f537041531&metric_key=request_count&run_id=d0434de9683c4f05a64e80f537041531&max_results=25000 HTTP/1.1" 200 OK
+2026/11/02 21:51:56 INFO:     127.0.0.1:54792 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=d0434de9683c4f05a64e80f537041531&metric_key=request_latency&run_id=d0434de9683c4f05a64e80f537041531&max_results=25000 HTTP/1.1" 200 OK
+2026/11/02 21:51:56 INFO:     127.0.0.1:54792 - "GET /api/2.0/mlflow/runs/get?run_uuid=d0434de9683c4f05a64e80f537041531&run_id=d0434de9683c4f05a64e80f537041531 HTTP/1.1" 200 OK

@@ -1,0 +1,4 @@
+step,request_count,request_latency,request_success,prompt_tokens_estimate,conversation_tokens_estimate,completion_tokens_estimate,provider_prompt_tokens,provider_completion_tokens,provider_total_tokens
+0,1,1.9324469999410212,1,14,20,24,31,24,55
+1,2,1.328189400024712,1,9,53,48,72,48,120
+2,3,0.9949874999001622,1,10,111,24,138,24,162
