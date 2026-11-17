@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Date of birth",
+    "source": {"source_field": "patientDOB", "datatype": "date", "description": "Patient date of birth", "example_value": "1990-04-11"},
+    "response": {"target_field": "date_of_birth", "human_review": false, "reason": "The description identifies the patient's date of birth, and the date datatype fits the destination."}
+  },
+  {
+    "label": "Full legal name",
+    "source": {"source_field": "full_name", "datatype": "string", "description": "Full legal name in one field", "example_value": "Taylor Morgan Example"},
+    "response": {"target_field": "REVIEW", "human_review": true, "reason": "The source combines name components. An analyst should define how to split them before mapping to individual name fields."}
+  }
+]
